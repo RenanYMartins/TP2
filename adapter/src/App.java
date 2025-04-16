@@ -16,5 +16,10 @@ public class App {
         AdaptadorDeTexto adt = new AdaptadorDeTexto(lista);
         adt.ImprimeTextFormatado();
 
+        MostraTexto mt = new MostraTexto();
+        mt.setAdaptador(etf);
+        mt.ImprimeTexto();
+        mt.setAdaptador(adt);
+        mt.ImprimeTexto();
     }
 }
